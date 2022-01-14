@@ -1,0 +1,1152 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	min-width: 960px;
+	.rem(@defaultFont, 17);
+	color: @black;
+}
+
+section {position: relative;}
+
+article {
+	width: 960px;
+	margin: 0 auto;
+	position: relative;
+}
+
+//Variables
+@defaultFont: 'MullerRegular';
+@fBold: 'MullerBold';
+
+//Mixins
+.clearfix {
+	&:after {
+		width: 0;
+		display: block;
+		content: '';
+		overflow: hidden;
+		clear: both;
+	}
+}
+
+.rem(@x, @y) {
+	font-family: @x;
+	font-size: (@y / 16) * 1rem;
+}
+
+.section-title {
+	.rem('MullerBlack', 44);
+	text-align: center;
+	text-transform: uppercase;
+	color: @black;
+}
+
+.round(@x) {
+	-webkit-border-radius: @x;
+	-moz-border-radius: @x;
+	-ms-border-radius: @x;
+	-o-border-radius: @x;
+	border-radius: @x;
+}
+
+.form {
+	width: 350px;
+	padding-bottom:52px ;
+	float: right;
+	position: relative;
+	.round(9px);
+	background: @formBg;
+
+	.title {
+		padding: 10px 10px 0 10px;
+		.rem('MullerBold', 22);
+		text-align: center;
+		text-transform: uppercase;
+		color: @yellow;
+	}
+
+	.sub-title {
+		margin-bottom: 10px !important;
+		padding: 0 10px;
+		.rem(@defaultFont, 18) !important;
+		text-align: center !important;
+		color: @white !important;
+	}
+
+	form {
+		padding: 10px 25px;
+		.round(9px);
+		background: @black;
+
+		label {
+			display: block;
+			.rem('MullerRegularItalic', 16);
+			color: @white;
+		}
+
+		input {
+			width: 100%;
+			height: 36px;
+			margin-bottom: 15px;
+			padding: 0 10px;
+			line-height: 36px;
+			.rem('MullerRegular', 21);
+			border: none;
+			outline: none;
+			.round(9px);
+		}
+
+		input[type="submit"] {
+			width: 228px;
+			height: 48px;
+			margin-left: -114px;
+			display: block;
+			position: absolute;
+			bottom: -34px;
+			left: 50%;
+			line-height: 48px;
+			.rem('MullerBold', 21);
+			text-transform: uppercase;
+		}
+
+		textarea {
+			width: 100%;
+			height: 200px;
+			padding: 10px;
+			.rem('MullerRegular', 21);
+			border: none;
+			outline: none;
+			.round(9px);
+		}
+	}
+}
+
+.button {
+	height: 48px;
+	padding: 0 35px;
+	display: inline-block;
+	cursor: pointer;
+	line-height: 48px;
+	.rem('MullerBold', 21);
+	text-transform: uppercase;
+	border: 1px solid @orange;
+	.round(9px);
+	box-shadow: 0 0 0 1px #ffea26 inset,
+				0 10px 20px -10px rgba(0, 0, 0, 1);
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffcc03+0,ffb300+100,207cca+100,7db9e8+100 */
+	background: #ffcc03; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ffcc03 0%, #ffb300 100%, #207cca 100%, #7db9e8 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffcc03), color-stop(100%,#ffb300), color-stop(100%,#207cca), color-stop(100%,#7db9e8)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ffcc03 0%,#ffb300 100%,#207cca 100%,#7db9e8 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ffcc03 0%,#ffb300 100%,#207cca 100%,#7db9e8 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ffcc03 0%,#ffb300 100%,#207cca 100%,#7db9e8 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #ffcc03 0%,#ffb300 100%,#207cca 100%,#7db9e8 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffcc03', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+
+}
+
+.hide {
+	display: none;
+}
+
+//Colors
+@white: #fff;
+@black: #000;
+@bordo: #b22826;
+@formBg: #202020;
+@yellow: #ffc502;
+@orange: #e08217;
+@green: #13c700;
+
+//Section one
+#one {
+	min-height: 862px;
+	border-bottom: 10px solid @bordo;
+	background: url('../images/section-one-bg.jpg') 50% 100px no-repeat;
+
+	.logo {
+		width: 280px;
+		margin-right: 440px;
+		padding-top: 10px;
+		display: inline-block;
+		vertical-align: top;
+
+		.title {
+			.rem('MullerBlack', 32);
+			text-transform: uppercase;
+			color: @bordo;
+		}
+
+		.sub-title {
+			.rem(@defaultFont, 17);
+			text-align: left;
+		}
+	}
+
+	.adress-container {
+		width: 430px;
+		margin: 5px 0 0 0;
+		padding: 5px;
+		position: absolute;
+		top: 0;
+		left: 290px;
+		.rem(@defaultFont, 16);
+		text-align: center;
+		.round(9px);
+		background: @bordo;
+		color: @white;
+
+		.main-adress {
+			margin-bottom: 3px;
+			padding: 2px;
+			text-shadow: 1px 1px 1px rgba(255, 255, 255, 1);
+			.round(9px);
+			background: @yellow;
+			color: @formBg;
+		}
+
+		.adress {
+			margin-bottom: 3px;
+		}
+
+		.hot-phone {
+			color: @white;
+
+			.selection {
+				margin-bottom: 5px;
+				display: inline-block;
+				.rem(@fBold, 22);
+				text-shadow: none;
+				border-bottom: 2px solid @yellow;
+				color: @yellow;
+			}
+		}
+	}
+
+	.quick-call {
+		width: 230px;
+		padding-top: 10px;
+		display: inline-block;
+		text-align: right;
+
+		.phone {
+			.rem('MullerBold', 25);
+		}
+
+		.button {
+			height: 25px;
+			padding: 0 7px;
+			line-height: 25px;
+			.rem(@defaultFont, 10);
+			.round(4px);
+		}
+	}
+
+	nav {
+		width: 100%;
+		height: 33px;
+		position: absolute;
+		top: 80px;
+		line-height: 33px;
+		background: @black;
+		z-index: 1000;
+
+		a {
+			margin-right: 70px;
+			display: inline-block;
+			text-decoration: none;
+			color: @white;
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+
+	.section-title {
+		margin-top: 20px;
+		.rem('MullerBlack', 70);
+		text-align: right;
+		text-transform: uppercase;
+		color: @bordo;
+	}
+
+	.sub-title {
+		margin-bottom: 80px;
+		.rem('MullerBold', 20);
+		text-align: right;
+	}
+
+	.one-bottom {
+		height: 198px;
+		margin-top: 200px;
+		background: url('../images/section-one-bottom-bg.jpg') 50% top no-repeat;
+
+		article {
+			padding-bottom: 10px;
+		}
+
+		.section-title {
+			margin-top: 35px;
+			display: inline-block;
+			.rem('MullerBlack', 43);
+			text-align: left;
+			color: @black;
+		}
+
+		.text {
+			margin-left: 15px;
+			display: inline-block;
+			vertical-align: top;
+
+			.title {
+				margin: 15px 0;
+				.rem('MullerBold', 20);
+			}
+
+			ul {
+				list-style-type: none;
+
+				li {
+					width: 160px;
+					display: inline-block;
+					vertical-align: top;
+					.rem(@defaultFont, 15);
+					text-align: center;
+
+					img {
+						margin-bottom: 15px;
+					}
+				}
+			}
+		}
+	}
+}
+
+//Section two
+#two {
+	min-height: 1486px;
+	padding-top: 1px;
+	background: url('../images/section-two-bg-new.jpg') 50% top no-repeat;
+
+	.section-title {
+		margin-top: 80px;
+		text-align: right;
+	}
+
+	.cause {
+		display: inline-block;
+		position: absolute;
+		.rem(@defaultFont, 20);
+		color: @white;
+
+		&.one {
+			width: 360px;
+			padding-top: 70px;
+			top: 100px;
+			left: 280px;
+			text-align: center;
+			background: url('../images/case-icon-new.png') 50% top no-repeat;
+		}
+
+		&.two {
+			width: 240px;
+			min-height: 65px;
+			padding-left: 80px;
+			top: 350px;
+			left: 170px;
+			background: url('../images/phone-icon-new.png') left top no-repeat;
+		}
+
+		&.three {
+			width: 270px;
+			padding-left: 75px;
+			top: 350px;
+			left: 505px;
+			background: url('../images/calc-icon-new.png') left top no-repeat;
+		}
+
+		&.four {
+			width: 215px;
+			padding-left: 100px;
+			top: 500px;
+			left: 15px;
+			background: url('../images/document-icon-new.png') left top no-repeat;
+		}
+
+		&.five {
+			width: 320px;
+			padding-left: 85px;
+			top: 500px;
+			left: 300px;
+			background: url('../images/person-icon-new.png') left top no-repeat;
+		}
+
+		&.six {
+			width: 300px;
+			padding-left: 70px;
+			top: 500px;
+			left: 660px;
+			background: url('../images/safe-icon-new.png') left top no-repeat;
+		}
+	}
+
+	.yellow-title {
+		margin-top: 570px;
+		line-height: 35px;
+		.rem('MullerBlack', 63);
+		text-align: center;
+		text-transform: uppercase;
+		color: @yellow;
+	}
+
+	.yellow-square {
+		width: 100%;
+		.round(9px);
+		background: @yellow;
+		color: @black;
+
+		ul {
+			padding: 25px 0 20px 0;
+			vertical-align: top;
+			list-style-type: none;
+			list-style-position: inside;
+
+			li {
+				padding-left: 80px;
+				vertical-align: top;
+
+				&.one {
+					background: url('../images/number-one.png') 22px top no-repeat;
+				}
+
+				&.two {
+					height: 46px;
+					margin-bottom: 30px;
+					padding-top: 5px;
+					background: url('../images/number-two.png') 22px top no-repeat;
+				}
+
+				&.three {
+					height: 46px;
+					padding-top: 10px;
+					background: url('../images/number-three.png') 22px top no-repeat;
+				}
+
+				ul {
+					padding: 0;
+
+					li {
+						margin-bottom: 5px;
+						padding-left: 0;
+						list-style-type: disc;
+
+						&:last-child {
+							margin-bottom: 0;
+						}
+					}
+				}
+			}
+			
+			.number {
+				width: 80px;
+				display: inline-block;
+				.rem('MullerBlack', 65);
+				text-align: center;
+			}
+
+			span {
+				.rem(@defaultFont, 20);
+			}
+
+			p {
+				display: inline-block;
+				vertical-align: top;
+				.rem('MullerBold', 20);
+			}
+		}
+	}
+
+	.bottom-title {
+		margin: 0 0 0 -40px;
+		.rem('MullerBold', 32);
+		text-align: center;
+		color: @white;
+	}
+
+	.some-text {
+		margin-top: 175px;
+		padding-top: 50px;
+	}
+}
+
+//Section three
+@-webkit-keyframes animation {
+	0% {
+		color: @black;
+	}
+	50% {
+		color: @bordo;
+	}
+	100% {
+		color: @white;
+	}
+}
+@-moz-keyframes animation {
+	0% {
+		color: @black;
+	}
+	50% {
+		color: @bordo;
+	}
+	100% {
+		color: @white;
+	}
+}
+@-o-keyframes animation {
+	0% {
+		color: @black;
+	}
+	50% {
+		color: @bordo;
+	}
+	100% {
+		color: @white;
+	}
+
+}
+@keyframes animation {
+	0% {
+		color: @black;
+	}
+	50% {
+		color: @bordo;
+	}
+	100% {
+		color: @white;
+	}
+}
+
+#three {
+	height: 1554px;
+	background: url('../images/section-three-bg.png') 50% top no-repeat;
+
+	.work-step {
+		position: absolute;
+		.rem(@defaultFont, 20);
+		text-align: center;
+
+		.number {
+			.rem('MullerBlack', 53);
+			color: #ffb601;
+		}
+
+		.site-order {
+			margin-top: 10px;
+			animation-name: animation;
+			animation-duration: 2s;
+			animation-direction: alternate;
+			animation-iteration-count: infinite;
+			animation-timing-function: linear;
+		}
+
+		.selection {
+			font-weight: bold;
+			color: @bordo;
+		}
+
+		&.one {
+			width: 300px;
+			top: 43px;
+			left: 310px;
+		}
+
+		&.two {
+			width: 340px;
+			padding-top: 50px;
+			top: 255px;
+			left: 472px;
+			background: url('../images/step-two-bg.png') 50% top no-repeat;
+		}
+
+		&.three {
+			width: 180px;
+			padding-top: 50px;
+			top: 255px;
+			left: 180px;
+			background: url('../images/step-three-bg.png') 50% top no-repeat;
+		}
+
+		&.four {
+			width: 270px;
+			padding-top: 50px;
+			top: 465px;
+			left: 140px;
+			background: url('../images/step-four-bg.png') 50% top no-repeat;
+		}
+
+		&.five {
+			width: 260px;
+			padding-top: 50px;
+			top: 465px;
+			left: 515px;
+			background: url('../images/step-five-bg.png') 50% top no-repeat;
+		}
+
+		&.six {
+			width: 170px;
+			padding-top: 50px;
+			top: 675px;
+			left: 560px;
+			background: url('../images/step-six-bg.png') 50% top no-repeat;
+		}
+
+		&.seven {
+			width: 250px;
+			padding-top: 50px;
+			top: 675px;
+			left: 160px;
+			background: url('../images/step-seven-bg.png') 50% top no-repeat;
+		}
+
+		&.eight {
+			width: 100%;
+			padding-top: 50px;
+			top: 885px;
+			background: url('../images/step-eight-bg.png') 50% top no-repeat;
+		}
+
+		&.nine {
+			width: 100%;
+			padding-top: 50px;
+			top: 1090px;
+			background: url('../images/step-nine-bg.png') 50% top no-repeat;
+		}
+	}
+
+	.black {
+		width: 100%;
+		padding: 20px 0;
+		position: absolute;
+		bottom: 0;
+		background: #242424;
+
+		.wrapper {
+			width: 665px;
+		}
+
+		.title {
+			margin-bottom: 17px;
+			.rem('MullerBold', 28);
+			text-align: center;
+			text-transform: uppercase;
+			color: @yellow;
+		}
+
+		.sub-title {
+			margin-bottom: 28px;
+			.rem(@defaultFont, 18);
+			text-align: center;
+			color: @white;
+		}
+
+		form {
+			width: 100%;
+			padding: 20px 20px 30px 20px;
+			position: relative;
+
+			.round(9px);
+			background: @black;
+
+			.input-wrapper {
+				width: 300px;
+				margin-right: 20px;
+				display: inline-block;
+
+				&:nth-child(2) {
+					margin-right: 0;
+				}
+
+				label {
+					display: block;
+					.rem('MullerRegularItalic', 16);
+					color: @white;
+				}
+
+				input {
+					width: 100%;
+					height: 36px;
+					padding: 0 10px;
+					line-height: 36px;
+					.rem('MullerRegular', 21);
+					border: none;
+					outline: none;
+					.round(9px);
+				}
+
+				input[type="submit"] {
+					outline: none;
+				}
+			}
+
+			.button {
+				margin-left: -149px;
+				position: absolute;
+				left: 50%;
+				bottom: -35px;
+				outline: none;
+			}
+		}
+
+		.calc {
+			width: 500px;
+			height: 508px;
+			position: absolute;
+			top: -40px;
+			right: -130px;
+			background: url('../images/book2.png') left top no-repeat;
+			background-size: 100%;
+			z-index: 100;
+		}
+	}
+}
+
+//Section four 
+#four {
+	padding: 85px 0;
+
+	article {
+		padding: 25px 20px;
+		position: relative;
+		border: 2px dashed #d1d1d1;
+		z-index: 10px;
+
+		.section-title {
+			margin-bottom: 50px;
+			text-align: left;
+		}
+
+		.clients {
+			list-style-type: none;
+
+			li {
+				width: 450px;
+				height: 40px;
+				margin-bottom: 30px;
+				padding-left: 55px;
+				display: inline-block;
+				line-height: 40px;
+				.rem(@defaultFont, 20);
+
+				&:nth-child(even) {
+					width: 525px;
+				}
+
+				&:nth-child(odd) {
+					width: 375px;
+				}
+
+				&:nth-child(15), 
+				&:nth-child(16) {
+					margin-bottom: 0;
+				}
+				
+				&.one {
+					background: url('../images/clients-one-new.png') left 50% no-repeat;
+				}
+
+				&.two {
+					background: url('../images/clients-two.png') left 50% no-repeat;
+				}
+
+				&.three {
+					background: url('../images/clients-three.png') left 50% no-repeat;
+				}
+
+				&.four {
+					background: url('../images/clients-four-new.png') left 50% no-repeat;
+				}
+
+				&.five {
+					background: url('../images/clients-five-new.png') left 50% no-repeat;
+				}
+
+				&.six {
+					background: url('../images/clients-six-new.png') left 50% no-repeat;
+				}
+
+				&.seven {
+					background: url('../images/clients-seven.png') left 50% no-repeat;
+				}
+
+				&.eight {
+					background: url('../images/clients-eight-new.png') left 50% no-repeat;
+				}
+
+				&.nine {
+					background: url('../images/clients-nine-new.png') left 50% no-repeat;
+				}
+
+				&.ten {
+					background: url('../images/clients-ten.png') left 50% no-repeat;
+				}
+
+				&.eleven {
+					background: url('../images/clients-eleven.png') left 50% no-repeat;
+				}
+
+				&.twelve {
+					background: url('../images/clients-twelve.png') left 50% no-repeat;
+				}
+
+				&.thirteen {
+					background: url('../images/clients-thirteen-new.png') left 50% no-repeat;
+				}
+
+				&.fourteen {
+					background: url('../images/clients-fourteen.png') left 50% no-repeat;
+				}
+
+				&.fifteen {
+					background: url('../images/clients-fifteen.png') left 50% no-repeat;
+				}
+
+				&.sixteen {
+					padding: 0;
+
+					.selection {
+						.rem('MullerBlack', 31);
+						text-transform: uppercase;
+					}
+				}
+
+
+			}
+		}
+	}
+}
+
+//Section five
+#five {
+	height: 1253px;
+	padding-top: 1px;
+	background: url('../images/section-five-bg.jpg') 50% top no-repeat;
+
+	.section-title {
+		margin: 155px 0 40px 0;
+	}
+
+	table {
+		width: 100%;
+		border-collapse: collapse;
+		border: 1px solid #ddd;
+
+		tr {
+			&:nth-child(odd) {
+				background: #f6f6f6;
+			}
+		}
+
+		th {
+			height: 78px;
+			position: relative;
+			.rem(@defaultFont, 20);
+			background: #545454;
+			color: @white;
+
+			&:nth-child(1) {
+				width: 394px;
+				border-right: 1px solid #e8e8e8;
+			}
+
+			&:nth-child(2) {
+				width: 141px;
+				border-right: 1px solid #e8e8e8;
+			}
+
+			&:nth-child(3) {
+				width: 145px;
+				border-right: 1px solid #e8e8e8;
+			}
+
+			&:nth-child(4) {
+				width: 141px;
+				border-right: 1px solid #e8e8e8;
+			}
+
+			&.active {
+				background: @green;
+			}
+
+			.price {
+				.rem('MullerBold', 20);
+			}
+
+			&.bottom {
+				.rem(@defaultFont, 17);
+
+				.button {
+					height: 32px;
+					margin-left: -60px;
+					padding: 0 15px;
+					line-height: 32px;
+					position: absolute;
+					bottom: -15px;
+					left: 50%;
+					.rem('MullerBold', 16);
+					text-transform: none;
+					.round(3px);
+					color: @black;
+				}
+			}
+		}
+
+		td {
+			height: 57px;
+			padding-left: 11px;
+			vertical-align: middle;
+			.rem('MullerBold', 38);
+			text-align: center;
+			border: 1px solid #e8e8e8;
+			color: @green;
+
+			&:first-child,
+			&.bottomer {
+				.rem(@defaultFont, 19);
+				text-align: left;
+				color: @black;
+			}
+		}
+	}
+}
+
+//Section six
+#six {
+	padding: 65px 0;
+
+	article {
+		padding: 30px 0;
+		.rem('MullerMedium', 16);
+		text-align: center;
+		border: 2px dashed #d1d1d1;
+
+		img {
+			margin-bottom: 15px;
+		}
+	}
+
+	.section-title {
+		margin-bottom: 60px;
+	}
+}
+
+//Section seven
+#seven {
+	padding: 390px 0 190px 0;
+	background: url('../images/ipad.png') 50% top no-repeat,
+				url('../images/section-seven-bg-new.jpg') 50% 105px no-repeat;
+	z-index: 6;
+				
+
+	article {
+		height: 100%;
+
+	}
+	
+	.section-title {
+		margin-bottom: 40px;
+		color: @white;
+	}
+	
+	.video-review {
+		width: 450px;
+		margin: 0 15px 50px 25px;
+		display: inline-block;
+		vertical-align: top;
+		.rem('MullerRegular', 25);
+		text-align: center;
+		color: @white;
+
+		&:nth-child(3) {
+			margin: 0;
+		}
+	}
+
+	.video-container {
+		width: 450px;
+		height: 315px;
+		margin-bottom: 20px;
+		padding: 5px;
+		display: inline-block;
+		.round(4px);
+		background: @black;
+	}
+
+	.slider-container {
+		margin: 0 0 330px 0;
+	}
+
+	.bxslider {
+		width: 900px;
+		list-style-type: none;
+
+		li {
+			display: inline-block;
+			.rem('MullerRegular', 25);
+			text-align: center;
+			color: @white;
+
+			img {
+				margin-bottom: 5px;
+				height: 409px;
+			display: block;
+			overflow: hidden;
+			}
+		}
+	}
+
+	.ask-container {
+		text-align: center;
+
+		.section-title {
+			margin-bottom: 20px;
+			.rem('MullerBlack', 65);
+			color: @white;
+		}
+
+		.button {
+			height: 54px;
+			line-height: 54px;
+			.rem(@defaultFont, 33);
+			text-transform: none;
+			background: ;
+		}
+	}
+}
+
+//Section eight
+#eight {
+	margin: -370px 0 0 0;
+	height: 1008px;
+
+	.map {
+		width: 100%;
+		height: 1008px;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		background: @black;
+		z-index: 1;
+	}
+
+	.contacts {
+		width: 450px;
+		padding: 20px;
+		position: absolute;
+		right: 15px;
+		top: 570px;
+		.rem(@defaultFont, 28);
+		background: rgba(0, 0, 0, .72);
+		color: @white;
+		z-index: 2;
+
+		p {
+			min-height: 31px;
+			padding-left: 60px;
+
+			&:nth-child(1) {
+				margin-bottom: 10px;
+			}
+
+			&:nth-child(2) {
+				margin-bottom: 10px;
+			}
+
+			&.location {
+				background: url('../images/contacts-location-icon.png') left top no-repeat;
+			}
+
+			&.email {
+				background: url('../images/contacts-email-icon.png') left top no-repeat;
+			}
+
+			&.phone {
+				background: url('../images/contacts-phone-icon.png') left top no-repeat;
+			}
+		}
+	}
+}
+
+//Mobile styles
+@media screen and (max-device-width: 600px) {
+	#one {
+		.quick-call {
+			width: 225px;
+		}
+
+		.sub-title {
+			font-size: 0.5rem;
+		}	
+	}
+
+	#two {
+		.section-title {
+			font-size: 1.7rem;
+		}
+
+		.yellow-square ul span {
+			font-size: 0.6rem;
+		}
+
+		.some-text {
+			margin-top: 85px;
+			padding-top: 50px;
+		}
+
+		.bottom-title {
+			font-size: 0.9rem;
+		}
+	}
+
+	#three {
+		.black {
+			.calc {
+				width: 400px;
+				right: 0;
+			}
+		}
+	}
+}
+
+//Fixed 
+.fixed {
+	position: fixed !important;
+	top: 0 !important;
+}
+
+/* Arcticmodal */
+.arcticmodal-overlay,
+.arcticmodal-container { position: fixed; left: 0; top: 0; right: 0; bottom: 0; z-index: 1000; }
+.arcticmodal-container { overflow: auto; margin: 0; padding: 0; border: 0; border-collapse: collapse; }
+*:first-child+html .arcticmodal-container { height: 100% }
+.arcticmodal-container_i { height: 100%; margin: 0 auto; }
+.arcticmodal-container_i2 { padding: 24px; margin: 0; border: 0; vertical-align: middle; }
+.arcticmodal-error { padding: 20px; border-radius: 10px; background: #000; color: #fff; }
+.arcticmodal-loading { width: 80px; height: 80px; border-radius: 10px; background: #000; }
+
+input,
+span.button,
+.slider-container,
+.bx-wrapper{
+	position: relative;
+	z-index: 10;
+}
+
+#snowflakesCanvas { 
+	position: fixed; 
+	top: 0; 
+} 
