@@ -2,8 +2,10 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title><eБухгалтерия Онлайн 24</title>
+	<title>Бухгалтерия Онлайн 24</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" href="images/favicon.ico" type="image/png">
+
 	<link rel="stylesheet" href="styles/styles.css">
 	<link rel="stylesheet" href="styles/fonts.css">
 	<link rel="stylesheet" href="styles/jquery.bxslider.css">
@@ -11,18 +13,18 @@
 	<link rel="stylesheet" href="styles/animation.css">
 	<link rel="stylesheet" href="styles/lightbox.css">
 
-	<script type="text/javascript">
+	<!-- <script type="text/javascript">
 	var __cs = __cs || [];
 	__cs.push(["setAccount", "tSMOpgq1FdwpQdGTqEXmCOOuOVR8ai1D"]);
 	__cs.push(["setHost", "//server.comagic.ru/comagic"]);
 	</script>
-	<script type="text/javascript" async src="//app.comagic.ru/static/cs.min.js"></script>
+	<script type="text/javascript" async src="//app.comagic.ru/static/cs.min.js"></script> -->
 
 </head>
 <body>
 	<main>
 		<section id="one">
-			<article>
+			<article class="Tophead">
 				<div class="logo">
 					<p class="title">Бухгалтер.PRO</p>
 					<p class="sub-title">Профессиональное удаленное
@@ -40,7 +42,10 @@
 				</div>
 			</article>
 			<nav class="sticky">
-				<article>
+				<div id="hamburger" class="">
+					<span></span>
+				</div>
+				<article class="menu">
 					<a href=".ex1">Акция</a>
 					<a href=".ex2">Услуги</a>
 					<a href=".ex3">Тарифы</a>
@@ -50,6 +55,8 @@
 					<a href=".ex7">Контакты</a>
 				</article>
 			</nav>
+		</section>
+		<section id="header">	
 			<article class="clearfix">
 				<h2 class="section-title">Удаленный<br />бухгалтер</h2>
 				<p class="sub-title clearfix">Идеальная бухгалтерия для ИП и ООО, без найма<br />бухгалтера в штат, рисков и лишних расходов</p>
@@ -65,7 +72,9 @@
 					</form>
 				</div>
 			</article>
-			<div class="one-bottom ex1">
+		</section>	
+
+		<div class="one-bottom ex1">
 				<article>
 					<h2 class="section-title">Экспресс-аудит<br />Вашего бизнеса<br />бесплатно</h2>
 					<div class="text">
@@ -86,17 +95,21 @@
 						</ul>
 					</div>
 				</article>
-			</div>
-		</section>
+		</div>
+		
+
 		<section id="two" class="ex2">
 			<article>
-				<h2 class="section-title">100%<br />гарантия<br />результата</h2>
-				<div class="cause one">С Вами будут работать только бухгалтера с опытом налоговых проверок</div>
-				<div class="cause two">Наш бухгалтер всегда на связи</div>
-				<div class="cause three">Все необходимые услуги включены в стоимость</div>
-				<div class="cause four">Мы решаем проблемы с налоговой и фондами</div>
-				<div class="cause five">Наш бухгалтер никогда не заболеет, не выйдет в декрет и не опоздает на работу</div>
-				<div class="cause six">Мы финансово ответственны за нашу работу</div>
+				<h2 class="section-title">100% <span>гарантия</span> <span>результата</span></h2>
+				<div class="causeWrap">
+					<div class="cause one">С Вами будут работать только бухгалтера с опытом налоговых проверок</div>
+					<div class="cause two">Наш бухгалтер всегда на связи</div>
+					<div class="cause three">Все необходимые услуги включены в стоимость</div>
+					<div class="cause four">Мы решаем проблемы с налоговой и фондами</div>
+					<div class="cause five">Наш бухгалтер никогда не заболеет, не выйдет в декрет и не опоздает на работу</div>
+					<div class="cause six">Мы финансово ответственны за нашу работу</div>
+					
+				</div>
 				<h3 class="yellow-title">+ так же вы получите:</h3>
 				<div class="yellow-square">
 					<ul>
@@ -116,44 +129,50 @@
 				</div>
 			</article>
 		</section>
+
 		<section id="three">
 			<article>
-				<div class="work-step one">
-					<p class="number">1</p>
-					<p>Вы оставляете заявку<br />на сайте, или звоните<br /><span class="selection comagic_phone1">8 (800) 500 35 31</span></p>
-					<span class="site-order button" data-url="site-order">Оставить заявку</span>
+				<div class="ex4 some-text">
+					<p class="bottom-title ex4">Как мыначинаем работать</p>
 				</div>
-				<div class="work-step two hidded animated mov">
-					<p class="number">2</p>
-					<p>Анализируем особенности вашего бизнеса, узнаём, как они влияют на бухгалтерский и налоговый учет</p>
-				</div>
-				<div class="work-step three hidded animated mov">
-					<p class="number">3</p>
-					<p>Проанализируем состояние дел в бухгалтерском и налоговом учете</p>
-				</div>
-				<div class="work-step four hidded animated mov2">
-					<p class="number">4</p>
-					<p>Проведем сверки с ИНФС, ПФР и ФСС на предмет на наличия задолжностей и несданных отчетов</p>
-				</div>
-				<div class="work-step five hidded animated mov2">
-					<p class="number">5</p>
-					<p>При необходимости, проведем восстановление бухгалтерии</p>
-				</div>
-				<div class="work-step six hidded animated mov">
-					<p class="number">6</p>
-					<p>Подключим к электронной сдаче отчетности</p>
-				</div>
-				<div class="work-step seven hidded animated mov">
-					<p class="number">7</p>
-					<p>Вернем НДС или другие переплаченные налоги из бюджета</p>
-				</div>
-				<div class="work-step eight hidded animated mov2">
-					<p class="number">8</p>
-					<p>Ваша бухгалтерская база 1С будет<br />размещена на удаленном сервере в Интернете.<br />Мы ее регулярно обновляем.<br />Вам будет предоставлен круглосуточный доступ к базе</p>
-				</div>
-				<div class="work-step nine hidded animated mov">
-					<p class="number">9</p>
-					<p>Разработаем регламент по документообороту и нашему<br />с вами взаимодействию, чтобы Ваши работники<br />вовремя получали зарплату,а контрагенты правильно<br />оформленные документы и акты сверки</p>
+				<div class="work-stepWrap">
+					<div class="work-step one">
+						<p class="number">1</p>
+						<p>Вы оставляете заявку<br />на сайте, или звоните<br /><span class="selection comagic_phone1">8 (800) 500 35 31</span></p>
+						<span class="site-order button" data-url="site-order">Оставить заявку</span>
+					</div>
+					<div class="work-step two hidded animated mov">
+						<p class="number">2</p>
+						<p>Анализируем особенности вашего бизнеса, узнаём, как они влияют на бухгалтерский и налоговый учет</p>
+					</div>
+					<div class="work-step three hidded animated mov">
+						<p class="number">3</p>
+						<p>Проанализируем состояние дел в бухгалтерском и налоговом учете</p>
+					</div>
+					<div class="work-step four hidded animated mov2">
+						<p class="number">4</p>
+						<p>Проведем сверки с ИНФС, ПФР и ФСС на предмет на наличия задолжностей и несданных отчетов</p>
+					</div>
+					<div class="work-step five hidded animated mov2">
+						<p class="number">5</p>
+						<p>При необходимости, проведем восстановление бухгалтерии</p>
+					</div>
+					<div class="work-step six hidded animated mov">
+						<p class="number">6</p>
+						<p>Подключим к электронной сдаче отчетности</p>
+					</div>
+					<div class="work-step seven hidded animated mov">
+						<p class="number">7</p>
+						<p>Вернем НДС или другие переплаченные налоги из бюджета</p>
+					</div>
+					<div class="work-step eight hidded animated mov2">
+						<p class="number">8</p>
+						<p>Ваша бухгалтерская база 1С будет<br />размещена на удаленном сервере в Интернете.<br />Мы ее регулярно обновляем.<br />Вам будет предоставлен круглосуточный доступ к базе</p>
+					</div>
+					<div class="work-step nine hidded animated mov">
+						<p class="number">9</p>
+						<p>Разработаем регламент по документообороту и нашему<br />с вами взаимодействию, чтобы Ваши работники<br />вовремя получали зарплату,а контрагенты правильно<br />оформленные документы и акты сверки</p>
+					</div>
 				</div>
 			</article>
 			<div class="black">
@@ -173,6 +192,7 @@
 				</article>
 			</div>
 		</section>
+
 		<section id="four">
 			<article>
 				<h2 class="section-title">нашими услугами<br />уже пользуются</h2>
@@ -193,97 +213,103 @@
 				</ul>
 			</article>
 		</section>
+
 		<section id="five" class="ex3">
 			<article>
 				<h2 class="section-title">сколько же стоит решение всех проблем с бухгалтерией?</h2>
-				<table>
-					<tr>
-						<th>Пакет услуг</th>
-						<th>Нулевая<br />отчетность</th>
-						<th>УСН<br />6%</th>
-						<th class="active">УСН<br />15%</th>
-						<th>С НДС</th>
-					</tr>
-					<tr>
-						<td>Подготовка и сдача отчетности</td>
-						<td>+</td>
-						<td>+</td>
-						<td>+</td>
-						<td>+</td>
-					</tr>
-					<tr>
-						<td>Ведение бухгалтерского учета</td>
-						<td>&nbsp;</td>
-						<td>+</td>
-						<td>+</td>
-						<td>+</td>
-					</tr>
-					<tr>
-						<td>Расчет налогов</td>
-						<td>&nbsp;</td>
-						<td>+</td>
-						<td>+</td>
-						<td>+</td>
-					</tr>
-					<tr>
-						<td>Подготовка первичных документов</td>
-						<td>&nbsp;</td>
-						<td>+</td>
-						<td>+</td>
-						<td>+</td>
-					</tr>
-					<tr>
-						<td>Расчет и начисление заработной платы</td>
-						<td>&nbsp;</td>
-						<td>+</td>
-						<td>+</td>
-						<td>+</td>
-					</tr>
-					<tr>
-						<td>Ведение документации по кадрам</td>
-						<td>&nbsp;</td>
-						<td>+</td>
-						<td>+</td>
-						<td>+</td>
-					</tr>
-					<tr>
-						<td>Бухгалтерская база 1С</td>
-						<td>&nbsp;</td>
-						<td>+</td>
-						<td>+</td>
-						<td>+</td>
-					</tr>
-					<tr>
-						<td>Консультации по налогообложению</td>
-						<td>&nbsp;</td>
-						<td>+</td>
-						<td>+</td>
-						<td>+</td>
-					</tr>
-					<tr>
-						<td>Контроль отсутствия претензий со стороны налоговой и фондов</td>
-						<td>&nbsp;</td>
-						<td>+</td>
-						<td>+</td>
-						<td>+</td>
-					</tr>
-					<tr>
-						<td>Внутренний аудит</td>
-						<td>&nbsp;</td>
-						<td>+</td>
-						<td>+</td>
-						<td>+</td>
-					</tr>
-					<tr>
-						<th>Стоимость услуги</th>
-						<th class="bottom"><span class="price more-button">3000 руб.</span><br />в квартал <span class="button more-button" data-url="more-order">Подробнее</span></th>
-						<th class="bottom"><span class="price more-button">от 7500 руб.</span><br />в месяц <span class="button more-button" data-url="more-order">Подробнее</span></th>
-						<th class="bottom"><span class="price more-button">от 8500 руб.</span><br />в месяц <span class="button more-button" data-url="more-order">Подробнее</span></th>
-						<th class="bottom"><span class="price more-button">от 9900 руб.</span><br />в месяц <span class="button more-button" data-url="more-order">Подробнее</span></th>
-					</tr>
-				</table>
+				<div class="tableWrap">
+	
+					<table>
+						<tr>
+							<th>Пакет услуг</th>
+							<th>Нулевая<br />отчетность</th>
+							<th>УСН<br />6%</th>
+							<th class="active">УСН<br />15%</th>
+							<th>С НДС</th>
+						</tr>
+						<tr>
+							<td>Подготовка и сдача отчетности</td>
+							<td>+</td>
+							<td>+</td>
+							<td>+</td>
+							<td>+</td>
+						</tr>
+						<tr>
+							<td>Ведение бухгалтерского учета</td>
+							<td>&nbsp;</td>
+							<td>+</td>
+							<td>+</td>
+							<td>+</td>
+						</tr>
+						<tr>
+							<td>Расчет налогов</td>
+							<td>&nbsp;</td>
+							<td>+</td>
+							<td>+</td>
+							<td>+</td>
+						</tr>
+						<tr>
+							<td>Подготовка первичных документов</td>
+							<td>&nbsp;</td>
+							<td>+</td>
+							<td>+</td>
+							<td>+</td>
+						</tr>
+						<tr>
+							<td>Расчет и начисление заработной платы</td>
+							<td>&nbsp;</td>
+							<td>+</td>
+							<td>+</td>
+							<td>+</td>
+						</tr>
+						<tr>
+							<td>Ведение документации по кадрам</td>
+							<td>&nbsp;</td>
+							<td>+</td>
+							<td>+</td>
+							<td>+</td>
+						</tr>
+						<tr>
+							<td>Бухгалтерская база 1С</td>
+							<td>&nbsp;</td>
+							<td>+</td>
+							<td>+</td>
+							<td>+</td>
+						</tr>
+						<tr>
+							<td>Консультации по налогообложению</td>
+							<td>&nbsp;</td>
+							<td>+</td>
+							<td>+</td>
+							<td>+</td>
+						</tr>
+						<tr>
+							<td>Контроль отсутствия претензий со стороны налоговой и фондов</td>
+							<td>&nbsp;</td>
+							<td>+</td>
+							<td>+</td>
+							<td>+</td>
+						</tr>
+						<tr>
+							<td>Внутренний аудит</td>
+							<td>&nbsp;</td>
+							<td>+</td>
+							<td>+</td>
+							<td>+</td>
+						</tr>
+						<tr>
+							<th>Стоимость услуги</th>
+							<th class="bottom"><span class="price more-button">3000 руб.</span><br />в квартал <span class="button more-button" data-url="more-order">Подробнее</span></th>
+							<th class="bottom"><span class="price more-button">от 7500 руб.</span><br />в месяц <span class="button more-button" data-url="more-order">Подробнее</span></th>
+							<th class="bottom"><span class="price more-button">от 8500 руб.</span><br />в месяц <span class="button more-button" data-url="more-order">Подробнее</span></th>
+							<th class="bottom"><span class="price more-button">от 9900 руб.</span><br />в месяц <span class="button more-button" data-url="more-order">Подробнее</span></th>
+						</tr>
+					</table>
+	
+				</div>
 			</article>
 		</section>
+
 		<section id="six" class="ex6">
 			<article>
 				<h2 class="section-title">наши постоянные клиенты</h2>
@@ -291,6 +317,7 @@
 				<p>и многие-многие другие</p>
 			</article>
 		</section>
+
 		<section id="seven" class="ex5">
 			<article>
 				<h2 class="section-title">отзывы  наших клиентов</h2>
@@ -359,7 +386,7 @@
 
 		<section id="eight">
 			<div class="map">
-				<script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=e-HVE2MngSYmPRbx_Vqjwh2IpvMExNFl&width=100%&height=1008&lang=ru_RU&sourceType=constructor"></script>
+				<script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=e-HVE2MngSYmPRbx_Vqjwh2IpvMExNFl&width=100%&height=600&lang=ru_RU&sourceType=constructor"></script>
 			</div>
 			<article>
 				<div class="contacts ex7">
@@ -440,7 +467,7 @@
 	<script src="scripts/script.js"></script>
 
 	<!-- Yandex.Metrika counter -->
-	<script type="text/javascript">
+	<!-- <script type="text/javascript">
 	    (function (d, w, c) {
 	        (w[c] = w[c] || []).push(function() {
 	            try {
@@ -467,8 +494,9 @@
 	        } else { f(); }
 	    })(document, window, "yandex_metrika_callbacks");
 	</script>
-	<noscript><div><img src="https://mc.yandex.ru/watch/32603785" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+	<noscript><div><img src="https://mc.yandex.ru/watch/32603785" style="position:absolute; left:-9999px;" alt="" /></div></noscript> -->
 	<!-- /Yandex.Metrika counter -->
-	<script type="text/javascript" src="https://doprodavec.ru/code1493/" ></script>
+	<!-- <script type="text/javascript" src="https://doprodavec.ru/code1493/" ></script> -->
+
 </body>
 </html>
